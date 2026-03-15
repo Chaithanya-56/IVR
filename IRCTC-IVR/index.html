@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>IRCTC Conversational IVR Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>IRCTC Conversational IVR Simulator</h2>
+
+<div class="main-container">
+
+<!-- Chat Panel -->
+<div class="chat-panel">
+
+<div id="chat"></div>
+
+<div class="input-area">
+
+<input id="textInput" placeholder="Type or speak..." />
+
+<button onclick="sendText()">Send</button>
+
+<button onclick="startSpeech()">🎤</button>
+
+<button onclick="resetConversation()">Reset</button>
+
+</div>
+
+<div class="suggestions">
+
+<button onclick="quick('book ticket')">Book Ticket</button>
+
+<button onclick="quick('check pnr status')">PNR Status</button>
+
+<button onclick="quick('cancel my ticket')">Cancel Ticket</button>
+
+</div>
+
+</div>
+
+<!-- Debug Panel -->
+<div class="debug-panel">
+
+<h3>Conversation Debug</h3>
+
+<pre id="debug"></pre>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
